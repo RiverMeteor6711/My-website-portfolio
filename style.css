@@ -375,6 +375,15 @@ article .icon {
   height: 90%;
 }
 
+.project-1-img {
+  height: 35vh;
+  border-radius: 2rem;
+}
+
+.project-1-title {
+  padding-top: 2.5rem;
+}
+
 .project-title {
   margin: 1rem;
   color: black;
@@ -385,6 +394,10 @@ article .icon {
   border-color: rgb(163 163, 163);
 }
 
+.project-sub-title-second-line{
+  padding-bottom: 2rem;
+}
+
 /* CONTACT */
 
 #contact {
@@ -392,6 +405,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  padding-bottom: 5rem;
 }
 
 .contact-info-upper-container {
@@ -427,6 +441,7 @@ article .icon {
 }
 
 /* FOOTER SECTION */
+
 
 footer {
   height: 26vh;
