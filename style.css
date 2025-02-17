@@ -349,13 +349,24 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
+  width: 15rem;
   justify-content: space-around;
   gap: 0.5rem;
 }
 
 article .icon {
   cursor: default;
+}
+
+.c-icon {
+  cursor: pointer;
+  height: 2rem;
+  padding-top: 1rem;
+  padding-left: 1.9rem;
+}
+
+.c-text{
+  padding-left: 4rem;
 }
 
 /* PROJECTS SECTION */
