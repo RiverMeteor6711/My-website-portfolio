@@ -5,10 +5,12 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 246, 255);
 }
 
 html {
@@ -167,6 +169,7 @@ section {
   justify-content: center;
   gap: 7rem;
   height: 80vh;
+  
 }
 
 .section__pic-container {
@@ -304,7 +307,7 @@ section {
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163 163, 163);
+  border-color: rgb(163, 163, 163);
   text-align: center;
 }
 
@@ -365,7 +368,7 @@ article .icon {
   padding-left: 1.9rem;
 }
 
-.c-text{
+.c-text {
   padding-left: 4rem;
 }
 
@@ -405,7 +408,7 @@ article .icon {
   border-color: rgb(163 163, 163);
 }
 
-.project-sub-title-second-line{
+.project-sub-title-second-line {
   padding-bottom: 2rem;
 }
 
@@ -452,7 +455,6 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
 
 footer {
   height: 26vh;
