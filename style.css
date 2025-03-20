@@ -188,6 +188,7 @@ section {
 
 .profile-pic {
   border-radius: 50%;
+  border: grey 0.1rem solid
 }
 
 .section__text {
