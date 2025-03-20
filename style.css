@@ -20,6 +20,11 @@ p {
   color: #6b3666;
 }
 
+p:hover,
+.title,
+.Title:hover {
+  cursor: default;
+}
 
 /* Transition*/
 
@@ -219,18 +224,18 @@ section {
 }
 
 /* ICONS */
-.icon, .icon1 {
+.icon,
+.icon1 {
   height: 2rem;
   padding-top: 1rem;
 }
 
-.icon1{
+.icon1 {
   transition: transform 300ms ease;
   cursor: pointer;
 }
 
-
-.icon1:hover{
+.icon1:hover {
   height: 2.25rem;
   transform: scale(1.2);
 }
@@ -261,13 +266,12 @@ section {
   cursor: pointer;
 }
 
-
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
 
-.btn-color-1{
+.btn-color-1 {
   background: black;
   color: white;
 }
@@ -298,6 +302,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  background-color: #fff6ff;
 }
 
 .about-details-container {
@@ -323,10 +328,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: #fff6ff;
   border-radius: 2rem;
-  border: .1rem solid;
-  border-color:#6b3666;
+  border: 0.1rem solid;
+  border-color: #6b3666;
   text-align: center;
 }
 
@@ -347,7 +352,7 @@ section {
   position: relative;
 }
 
-.experience-icon{
+.experience-icon {
   scale: 1.1;
 }
 
@@ -356,6 +361,10 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+}
+
+.experience-sub-title:hover {
+  cursor: default;
 }
 
 .experience-details-container {
@@ -385,7 +394,7 @@ article .icon {
 }
 
 .c-icon {
-  cursor: pointer;
+  cursor: default;
   height: 2rem;
   padding-top: 1rem;
   padding-left: 1.9rem;
@@ -402,8 +411,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: #6b3666;
+  background: #fff6ff;
 }
 
 .project-img {
@@ -423,7 +432,7 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: #6b3666;
 }
 
 .project-btn {
@@ -433,6 +442,10 @@ article .icon {
 
 .project-sub-title-second-line {
   padding-bottom: 2rem;
+}
+
+.project-sub-title-second-line:hover {
+  cursor: default;
 }
 
 /* CONTACT */
@@ -449,9 +462,9 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163 163, 163);
-  background: rgb(250, 250, 250);
+  border: #6b3666 0.1rem solid;
+  border-color:#6b3666;
+  background: #fff6ff;
   margin: 2rem auto;
   padding: 0.5rem;
 }
