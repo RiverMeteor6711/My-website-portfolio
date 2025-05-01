@@ -433,6 +433,11 @@ article .icon {
   padding-top: 2.5rem;
 }
 
+.iframe-container {
+  height: 500px;
+  width: 100%;
+}
+
 .project-title {
   margin: 1rem;
   color: #6b3666;
