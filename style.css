@@ -420,13 +420,7 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-1-img {
   height: 35vh;
-  border-radius: 2rem;
 }
 
 .project-1-title {
@@ -454,6 +448,13 @@ article .icon {
 
 .project-sub-title-second-line:hover {
   cursor: default;
+}
+
+.project-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 auto;
 }
 
 /* CONTACT */
