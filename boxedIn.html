@@ -1,26 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <h1>About Us</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=egde" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href="./assets/My-logo.png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Carson May</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
+    <nav id="hamburger-nav">
+      <div class="logo">Carson May</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-  <main>
-    <p>Welcome to the About page!</p>
-  </main>
+    <section id="boxed-in-more-info">
+      <div class="boxed-in-words">
+        <h1>Boxed In - C Programming Project (ENGGEN 131)</h1>
+        <p>
+          <br><br>I developed a fully functional version of the classic Sokoban puzzle
+          game using C, implementing key features such as a dynamic text-based
+          game board, player and object movement, undo functionality, and
+          win-state detection. The project challenged my logical thinking and
+          pushed my programming skills, especially in managing 2D arrays and
+          state transitions. Despite its complexity, I thoroughly enjoyed the
+          process and was proud to earn full marks for my work.
+        </p>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Your Website</p>
-  </footer>
-</body>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Carson May. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
