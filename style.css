@@ -67,13 +67,9 @@ a:hover {
 .logo {
   font-size: 2.25rem;
   transition: 300ms ease;
+  cursor: default
 }
 
-.logo:hover {
-  font-size: 3rem;
-  transition: all 300ms;
-  cursor: default;
-}
 
 /* Hamburger menu*/
 

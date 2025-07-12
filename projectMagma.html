@@ -1,26 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <h1>About Us</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=egde" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href="./assets/My-logo.png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Carson May</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
+    <nav id="hamburger-nav">
+      <div class="logo">Carson May</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-  <main>
-    <p>Welcome to the About page!</p>
-  </main>
+    <section id="boxed-in-more-info">
+      <div class="boxed-in-words">
+        <h1>Project Magma 2025 Semester 1 - Communities Against Alcohol Harm</h1>
+        <p>
+          <br><br>Project Magma is a student-led clubat the University of Auckland that
+          uses and develops the skills of Science and Engineering students to help not
+          for profit organisations carry out their missions. <br><br> In 2025, I was in 
+          a team of 6 students that worked with Communities Against Alcohol Harm (CAAH) to 
+          develop a tool that allowed them to automate the finding of new alcohol licence
+          applications around New Zealand. This tool was made using python and AWS
+          services, and it allows CAAH to keep on top of new applications
+          without having to manually search for them. <br><br> 
+          This project was a great introduction to working with a real-world client and
+          allowed me to devlopment my skills in all stages of a project life cycle. I was chosen
+          to be the team secretary, which meant I was responsible for taking minutes during 
+          client meetings and communicating with the client on behalf of the team.
+        </p>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Your Website</p>
-  </footer>
-</body>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Carson May. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
