@@ -42,16 +42,81 @@
       <div class="boxed-in-words">
         <h1>Boxed In - C Programming Project (ENGGEN 131)</h1>
         <p>
-          <br><br>I developed a fully functional version of the classic Sokoban puzzle
-          game using C, implementing key features such as a dynamic text-based
-          game board, player and object movement, undo functionality, and
-          win-state detection. The project challenged my logical thinking and
-          pushed my programming skills, especially in managing 2D arrays and
-          state transitions. Despite its complexity, I thoroughly enjoyed the
-          process and was proud to earn full marks for my work.
+          <br /><br />I developed a fully functional version of the classic
+          Sokoban puzzle game using C, implementing key features such as a
+          dynamic text-based game board, player and object movement, undo
+          functionality, and win-state detection. The project challenged my
+          logical thinking and pushed my programming skills, especially in
+          managing 2D arrays and state transitions. Despite its complexity, I
+          thoroughly enjoyed the process and was proud to earn full marks for my
+          work.
         </p>
       </div>
     </section>
+
+    <section
+      id="boxed-in-game"
+      style="
+        margin: 2rem auto;
+        max-width: 600px;
+        text-align: center;
+        background: #fff6ff;
+        border-radius: 1.5rem;
+        box-shadow: 0 2px 8px rgba(107, 54, 102, 0.08);
+        padding: 2rem;
+        border: 1px solid #6b3666;
+      "
+    >
+      <h2 style="color: #6b3666; margin-bottom: 1rem">Play Boxed In!</h2>
+      <p style="margin-bottom: 1rem; color: #6b3666; font-size: 1.1rem">
+        Use <strong>WASD</strong> keys to move, <strong>Z</strong> to undo.
+      </p>
+      <pre
+        id="gameOutput"
+        style="
+          background: #f7e9f7;
+          color: #6b3666;
+          border-radius: 1rem;
+          padding: 1rem;
+          min-height: 200px;
+          font-size: 1.1rem;
+          font-family: 'Fira Mono', 'Consolas', monospace;
+        "
+      >
+Loading game...</pre
+      >
+    </section>
+    <script>
+      // Redirect Emscripten's print output to the #gameOutput element
+      const gameOutput = document.getElementById("gameOutput");
+      window.Module = {
+        print: function (text) {
+          gameOutput.textContent += text + "\n";
+        },
+        printErr: function (text) {
+          gameOutput.textContent += "[Error] " + text + "\n";
+        },
+      };
+    </script>
+    <script src="boxed_in.js"></script>
+    <script>
+      const Module = Boxed_in(); // boxed_in.js returns a function
+      Module.onRuntimeInitialized = () => {
+        const startGame = Module.cwrap("StartGame", null, []);
+        const gameTick = Module.cwrap("GameTick", null, ["number"]);
+
+        // Start the game
+        startGame();
+
+        // Listen for key presses
+        document.addEventListener("keydown", (e) => {
+          const key = e.key.toLowerCase();
+          if ("wasdz".includes(key)) {
+            gameTick(key.charCodeAt(0));
+          }
+        });
+      };
+    </script>
 
     <footer>
       <nav>
