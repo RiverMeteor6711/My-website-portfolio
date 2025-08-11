@@ -29,11 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Open in new tab with security attributes
     window.open(githubUrl, '_blank', 'noopener,noreferrer');}
 
-
-    
-
-
-
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -54,3 +49,18 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements. forEach((el) => observer.observe(el));
+
+// Overlay for all popups
+const popupTriggers = document.querySelectorAll('.popup-hover');
+const pageOverlay = document.getElementById('pageOverlay');
+
+if (pageOverlay && popupTriggers.length > 0) {
+  popupTriggers.forEach(trigger => {
+    trigger.addEventListener('mouseenter', () => {
+      pageOverlay.classList.add('active');
+    });
+    trigger.addEventListener('mouseleave', () => {
+      pageOverlay.classList.remove('active');
+    });
+  });
+}

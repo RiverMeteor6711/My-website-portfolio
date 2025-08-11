@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=egde" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href="./assets/My-logo.png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Carson May</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Carson May</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="index.html#experience" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="index.html#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="boxed-in-more-info">
+      <div class="boxed-in-words">
+        <h1>Icon Attributions</h1>
+        <br />
+        <a href="https://www.flaticon.com/free-icons/2" title="2 icons"
+          >3 icons created by rizal2109 - Flaticon</a
+        ><br />
+        <a
+          href="https://www.flaticon.com/free-icons/project"
+          title="project icons"
+          >Project icons created by dDara - Flaticon</a
+        ><br />
+        <a href="https://www.flaticon.com/free-icons/bolt" title="bolt icons"
+          >Bolt icons created by Anggara - Flaticon</a
+        ><br />
+        <a
+          href="https://www.flaticon.com/free-icons/rocket"
+          title="rocket icons"
+          >Rocket icons created by Pixel perfect - Flaticon</a
+        ><br />
+        <a
+          href="https://www.flaticon.com/free-icons/violin"
+          title="violin icons"
+          >Violin icons created by Smashicons - Flaticon</a
+        ><br />
+        <a
+          href="https://www.flaticon.com/free-icons/development"
+          title="development icons"
+          >Development icons created by Freepik - Flaticon</a
+        ><br />
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Carson May. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
